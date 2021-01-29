@@ -13,8 +13,8 @@ def healthcheck():
 @server.route("/healthcheck_monitoreo")
 def healthcheck_monitoreo():
     return {
-        'cantidad_testeos': ut.load_data_json()
+        'cantidad_items': ut.load_data_json()
     }
 
 if __name__ == '__main__':
-    server.run(debug= True, host='0.0.0.0',port=8080)
+    server.run(debug= True, host='127.0.0.1',port=5000)
